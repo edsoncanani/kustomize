@@ -14,7 +14,7 @@ if [ -n "$1" ]; then
     version=v$1
   else
     version=$(curl -sL -o /dev/null -w %{url_effective} \
-    https://github.com/kubernetes-sigs/kustomize/releases/3.8.5 | rev | cut -d/ -f1 | rev)
+    https://github.com/kubernetes-sigs/kustomize/releases/v3.8.5 | rev | cut -d/ -f1 | rev)
 fi
 
 where=$PWD
